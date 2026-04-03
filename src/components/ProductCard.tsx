@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import type { Product } from "@/data/products";
+import { useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
   product: Product;
@@ -7,10 +10,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, offset }: ProductCardProps) {
-  const message = encodeURIComponent(
-    `Hi! I'm interested in "${product.name}" (${product.price}) from Adeena Collection.`
-  );
-  const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
+  const { addToCart } = useCart();
 
   return (
     <div
@@ -38,17 +38,19 @@ export default function ProductCard({ product, offset }: ProductCardProps) {
           {product.price}
         </p>
 
-        {/* WhatsApp CTA - visible on hover (desktop) or always (mobile) */}
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full py-2.5 sm:py-3 md:py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded-none flex items-center justify-center gap-2"
+        {/* Add to Cart CTA */}
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            addToCart(product);
+          }}
+          className="w-full py-2.5 sm:py-3 md:py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded-none flex items-center justify-center gap-2 relative z-10 transition-opacity hover:opacity-90"
         >
-          <span className="material-symbols-outlined text-sm">chat</span>
-          <span className="hidden sm:inline">Enquire on WhatsApp</span>
-          <span className="sm:hidden">Enquire</span>
-        </a>
+          <span className="material-symbols-outlined text-sm">shopping_cart</span>
+          <span className="hidden sm:inline">Add to Cart</span>
+          <span className="sm:hidden">Add</span>
+        </button>
       </div>
     </div>
   );

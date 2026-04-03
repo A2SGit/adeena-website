@@ -5,6 +5,10 @@ import Navbar from "@/components/Navbar";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { AuthProvider } from "@/contexts/AuthContext";
+import { CartProvider } from "@/contexts/CartContext";
+import AuthModal from "@/components/AuthModal";
+import CartDrawer from "@/components/CartDrawer";
 
 const notoSerif = Noto_Serif({
   subsets: ["latin"],
@@ -56,11 +60,17 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
-        <MobileBottomBar />
+        <AuthProvider>
+          <CartProvider>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+            <MobileBottomBar />
+            <AuthModal />
+            <CartDrawer />
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

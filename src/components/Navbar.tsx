@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { useCart } from "@/contexts/CartContext";
+import { useAuth } from "@/contexts/AuthContext";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,6 +16,8 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { cartCount, openCartDrawer } = useCart();
+  const { user, openAuthModal, logout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -70,6 +74,31 @@ export default function Navbar() {
 
           {/* Right Icons */}
           <div className="flex items-center gap-4 md:gap-6 text-primary">
+            {user ? (
+              <button
+                onClick={logout}
+                className="hidden md:flex hover:scale-95 duration-200 p-1 group relative"
+                aria-label="Logout"
+              >
+                <span className="material-symbols-outlined text-xl md:text-2xl">
+                  logout
+                </span>
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-surface-container-high px-2 py-1 rounded">
+                  Logout
+                </span>
+              </button>
+            ) : (
+              <button
+                onClick={openAuthModal}
+                className="hidden md:flex hover:scale-95 duration-200 p-1"
+                aria-label="Login"
+              >
+                <span className="material-symbols-outlined text-xl md:text-2xl">
+                  person
+                </span>
+              </button>
+            )}
+
             <button
               className="hover:scale-95 duration-200 p-1"
               aria-label="Search"
@@ -79,6 +108,7 @@ export default function Navbar() {
               </span>
             </button>
             <button
+              onClick={openCartDrawer}
               className="hover:scale-95 duration-200 relative p-1"
               aria-label="Shopping bag"
             >
@@ -86,7 +116,7 @@ export default function Navbar() {
                 shopping_bag
               </span>
               <span className="absolute -top-0.5 -right-0.5 bg-primary text-on-primary text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">
-                0
+                {cartCount}
               </span>
             </button>
 
@@ -132,6 +162,35 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+        </div>
+
+        {/* Mobile Auth and Cart */}
+        <div className="flex flex-col items-center gap-6 mt-8">
+          {user ? (
+            <button
+              onClick={() => {
+                logout();
+                setIsMenuOpen(false);
+              }}
+              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${
+                isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
+            >
+              Sign Out from {user.name}
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                openAuthModal();
+                setIsMenuOpen(false);
+              }}
+              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${
+                isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
+            >
+              Sign In
+            </button>
+          )}
         </div>
 
         {/* Mobile menu WhatsApp CTA */}
