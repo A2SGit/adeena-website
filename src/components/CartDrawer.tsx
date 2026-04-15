@@ -36,7 +36,7 @@ export default function CartDrawer() {
         aria-modal="true"
         aria-label="Shopping Cart"
       >
-        <div className="flex items-center justify-between p-6 border-b border-white/10">
+        <div className="flex items-center justify-between p-6 border-b border-outline/10">
           <h2 className="font-headline text-2xl text-primary">Your Cart</h2>
           <button 
             onClick={closeCartDrawer}
@@ -56,7 +56,7 @@ export default function CartDrawer() {
           ) : (
             items.map((item) => (
               <div key={item.product.name} className="flex gap-4 group">
-                <div className="relative w-24 h-32 rounded-md overflow-hidden bg-surface-container border border-white/5">
+                <div className="relative w-24 h-32 rounded-md overflow-hidden bg-surface-container border border-outline/10">
                   <Image 
                     src={item.product.image} 
                     alt={item.product.alt} 
@@ -104,7 +104,7 @@ export default function CartDrawer() {
         </div>
 
         {items.length > 0 && (
-          <div className="p-6 border-t border-white/10 bg-surface-container-lowest">
+          <div className="p-6 border-t border-outline/10 bg-surface-container-lowest">
             <div className="flex justify-between items-center mb-6">
               <span className="text-on-surface-variant uppercase tracking-wider text-sm">Subtotal</span>
               <span className="font-headline text-2xl text-primary">₹ {cartTotal.toLocaleString("en-IN")}</span>

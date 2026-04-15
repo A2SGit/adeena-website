@@ -2,68 +2,92 @@
 
 @theme inline {
   /* Primary Palette (Burgundy) */
-  --color-primary: #a31131; /* Brightened for dark mode */
-  --color-primary-container: #5d0014;
+  --color-primary: #a31131;
+  --color-primary-container: #ffd9dc;
   --color-primary-fixed: #ffb3b9;
   --color-primary-fixed-dim: #e4919a;
   --color-on-primary: #ffffff;
   --color-on-primary-fixed: #3b000a;
   --color-on-primary-fixed-variant: #6b001a;
-  --color-on-primary-container: #ffd9dc;
+  --color-on-primary-container: #3b000a;
   --color-inverse-primary: #e4919a;
 
-  /* Secondary Palette (Antique Gold) */
+  /* Secondary Palette (Champagne Gold / Heritage) */
   --color-secondary: #d4af37;
-  --color-secondary-container: #aa851d;
-  --color-secondary-fixed: #fceea8;
-  --color-secondary-fixed-dim: #dfc260;
-  --color-on-secondary: #2f1b1e;
+  --color-secondary-container: #fefce8;
+  --color-secondary-fixed: #fef9c3;
+  --color-secondary-fixed-dim: #fde047;
+  --color-on-secondary: #ffffff;
   --color-on-secondary-fixed: #2f1b1e;
   --color-on-secondary-fixed-variant: #4f3b1a;
-  --color-on-secondary-container: #ffdf9e;
+  --color-on-secondary-container: #211114;
 
-  /* Tertiary Palette (Emerald) */
-  --color-tertiary: #016a4e;
-  --color-tertiary-container: #00503a;
-  --color-tertiary-fixed: #8bf8cc;
-  --color-tertiary-fixed-dim: #6cdbb0;
+  /* Tertiary Palette (Slate for Contrast) */
+  --color-tertiary: #1e293b;
+  --color-tertiary-container: #f1f5f9;
+  --color-tertiary-fixed: #e2e8f0;
+  --color-tertiary-fixed-dim: #cbd5e1;
   --color-on-tertiary: #ffffff;
-  --color-on-tertiary-fixed: #002116;
-  --color-on-tertiary-fixed-variant: #004c37;
-  --color-on-tertiary-container: #b8ffd8;
+  --color-on-tertiary-fixed: #0f172a;
+  --color-on-tertiary-fixed-variant: #334155;
+  --color-on-tertiary-container: #0f172a;
 
-  /* Surface Palette (Dark Burgundy) */
-  --color-background: #240b12; /* Dark burgundy instead of black */
-  --color-on-background: #fdfbf7; /* Ivory instead of black */
-  --color-surface: #2e111a;
-  --color-surface-dim: #1e090e;
-  --color-surface-bright: #3f1823;
-  --color-surface-container-lowest: #140508;
-  --color-surface-container-low: #240b12;
-  --color-surface-container: #2e111a;
-  --color-surface-container-high: #3b1622;
-  --color-surface-container-highest: #491e2b;
-  --color-surface-variant: #491e2b;
+  /* Surface Palette (Clean White Theme) */
+  --color-background: #ffffff;
+  --color-on-background: #0f172a;
+  --color-surface: #fdfbf7;
+  --color-surface-dim: #f1f5f9;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container: #f1f5f9;
+  --color-surface-container-high: #e2e8f0;
+  --color-surface-container-highest: #cbd5e1;
+  --color-surface-variant: #e2e8f0;
   --color-surface-tint: #a31131;
-  --color-on-surface: #fdfbf7; /* Ivory */
-  --color-on-surface-variant: #e6dfc4;
-  --color-inverse-surface: #fdfbf7;
-  --color-inverse-on-surface: #240b12;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #475569;
+  --color-inverse-surface: #0f172a;
+  --color-inverse-on-surface: #f8fafc;
 
   /* Error */
-  --color-error: #ffb4ab;
-  --color-error-container: #93000a;
-  --color-on-error: #690005;
-  --color-on-error-container: #ffdad6;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #410002;
 
   /* Outline */
-  --color-outline: #8c7678;
-  --color-outline-variant: #dbbabb;
+  --color-outline: #e2e8f0;
+  --color-outline-variant: #cbd5e1;
 
   /* Typography */
   --font-headline: "Noto Serif", "Georgia", serif;
-  --font-body: "Manrope", "Helvetica Neue", sans-serif;
-  --font-label: "Manrope", "Helvetica Neue", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+  --font-label: "Inter", "Helvetica Neue", sans-serif;
+
+  /* Animations */
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-reveal: reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 /* === Base Styles === */
@@ -96,50 +120,67 @@ body {
 /* === Heritage Motif Overlay === */
 
 .botanical-overlay {
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 L90 50 L50 90 L10 50 Z' stroke='%23d4af37' stroke-opacity='0.15' stroke-width='1'/%3E%3Cpath d='M50 20 L80 50 L50 80 L20 50 Z' stroke='%23800020' stroke-opacity='0.1' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 L90 50 L50 90 L10 50 Z' stroke='%23d4af37' stroke-opacity='0.15' stroke-width='1'/%3E%3Cpath d='M50 20 L80 50 L50 80 L20 50 Z' stroke='%23a31131' stroke-opacity='0.1' stroke-width='0.5'/%3E%3C/svg%3E");
   background-repeat: repeat;
 }
 
 .botanical-bg {
-  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='100' r='80' stroke='%23800020' stroke-opacity='0.05' stroke-width='1' stroke-dasharray='5 5'/%3E%3Ccircle cx='100' cy='100' r='60' stroke='%23d4af37' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='100' r='80' stroke='%23a31131' stroke-opacity='0.05' stroke-width='1' stroke-dasharray='5 5'/%3E%3Ccircle cx='100' cy='100' r='60' stroke='%23d4af37' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 .botanical-accent {
-  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 20C100 20 85 50 60 60C35 70 10 75 10 100C10 125 35 130 60 140C85 150 100 180 100 180C100 180 115 150 140 140C165 130 190 125 190 100C190 75 165 70 140 60C115 50 100 20 100 20Z' stroke='%23800020' stroke-opacity='0.1' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 20C100 20 85 50 60 60C35 70 10 75 10 100C10 125 35 130 60 140C85 150 100 180 100 180C100 180 115 150 140 140C165 130 190 125 190 100C190 75 165 70 140 60C115 50 100 20 100 20Z' stroke='%23a31131' stroke-opacity='0.1' stroke-width='0.5'/%3E%3C/svg%3E");
 }
 
-/* === Gold Gradient === */
+/* === Special Utilities === */
 
-.gold-gradient {
-  background: linear-gradient(135deg, #d4af37 0%, #aa851d 100%);
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(163, 17, 49, 0.1);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #5d0014 100%);
+}
+
+.soft-gradient {
+  background: linear-gradient(180deg, rgba(163, 17, 49, 0.03) 0%, transparent 100%);
+}
+
+/* === Heritage Motif Overlay === */
+
+.botanical-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 L90 50 L50 90 L10 50 Z' stroke='%23a31131' stroke-opacity='0.12' stroke-width='1'/%3E%3Cpath d='M50 20 L80 50 L50 80 L20 50 Z' stroke='%23a31131' stroke-opacity='0.08' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.botanical-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='100' r='80' stroke='%23a31131' stroke-opacity='0.1' stroke-width='1' stroke-dasharray='5 5'/%3E%3Ccircle cx='100' cy='100' r='60' stroke='%23d4af37' stroke-opacity='0.1' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/* === Refined Transitions === */
+
+.transition-premium {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* === Scrollbar Styling === */
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: #fdfbf7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #50453b;
-  border-radius: 3px;
+  background: #a31131;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9c8e82;
-}
-
-/* === Hide scrollbar for horizontal scroll containers === */
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  background: #5d0014;
 }

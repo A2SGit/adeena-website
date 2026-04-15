@@ -27,10 +27,10 @@ export default function ProductCard({ product, offset }: ProductCardProps) {
       />
 
       {/* Always-visible mobile overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent md:from-stone-950 md:via-transparent md:to-transparent md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent md:from-black md:via-transparent md:to-transparent md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* Product info */}
-      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-8 flex flex-col justify-end md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 md:border md:border-primary/0 md:group-hover:border-primary/20">
+      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-8 flex flex-col justify-end md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 md:border md:border-primary/0 md:group-hover:border-primary/10">
         <h3 className="font-headline text-base sm:text-lg md:text-2xl text-primary mb-0.5 md:mb-1 line-clamp-1">
           {product.name}
         </h3>

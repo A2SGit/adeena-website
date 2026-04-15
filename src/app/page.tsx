@@ -11,26 +11,33 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <header className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
-        <div className="absolute inset-0 botanical-overlay opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background" />
+        <Image
+          src="/images/hero-bg.png"
+          alt="Luxury Saree Boutique"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="absolute inset-0 botanical-overlay opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
 
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl w-full">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl w-full animate-fade-in-up">
           <div className="mb-4 md:mb-6 inline-block">
             <span className="material-symbols-outlined text-primary text-3xl md:text-4xl opacity-50">
               local_florist
             </span>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline italic text-primary tracking-tighter mb-3 md:mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline italic text-primary tracking-tighter mb-3 md:mb-4 animate-reveal">
             sarees-central Sarees
           </h1>
-          <p className="text-sm sm:text-base md:text-xl font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-on-surface-variant mb-8 md:mb-12">
+          <p className="text-sm sm:text-base md:text-xl font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-on-surface-variant mb-8 md:mb-12 delay-200">
             Authentic South Indian Kanjeevarams & Silks
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center delay-300">
             <Link
               href="/collection"
-              className="w-full sm:w-auto px-8 sm:px-10 py-4 bg-primary text-on-primary font-semibold rounded-md transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/10 uppercase tracking-widest text-xs text-center"
+              className="w-full sm:w-auto px-8 sm:px-10 py-4 bg-gradient-to-r from-primary to-[#800b25] text-on-primary font-semibold rounded-md transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 uppercase tracking-widest text-xs text-center"
             >
               Shop Collection
             </Link>
@@ -38,7 +45,7 @@ export default function HomePage() {
               href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Sarees."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 sm:px-10 py-4 border border-outline/20 text-on-surface hover:border-primary/50 transition-all rounded-md uppercase tracking-widest text-xs flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 sm:px-10 py-4 border border-primary/20 text-on-surface hover:border-primary/50 transition-all rounded-md uppercase tracking-widest text-xs flex items-center justify-center gap-2 backdrop-blur-sm"
             >
               <span className="material-symbols-outlined text-lg">chat</span>
               Inquire via WhatsApp

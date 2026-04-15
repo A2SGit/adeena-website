@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/5 transition-all duration-300 ${isScrolled ? "bg-[#121212]/95 py-3" : "bg-[#121212]/80 py-4 md:py-6"
+        className={`fixed top-0 w-full z-50 glass-morphism transition-premium ${isScrolled ? "py-3" : "py-4 md:py-6"
           }`}
       >
         <div className="flex justify-between items-center px-4 sm:px-6 md:px-12 max-w-full mx-auto">
@@ -53,8 +53,7 @@ export default function Navbar() {
           >
             sarees-central Collection
           </Link>
-
-          {/* Desktop Nav Links */}
+...
           <div className="hidden md:flex gap-8 items-center">
             {navLinks.map((link) => (
               <Link
@@ -62,7 +61,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-xs tracking-[0.2em] font-light uppercase transition-colors duration-300 ${pathname === link.href
                     ? "text-primary border-b border-primary/50 pb-1"
-                    : "text-stone-300 hover:text-primary"
+                    : "text-on-surface-variant hover:text-primary"
                   }`}
               >
                 {link.label}

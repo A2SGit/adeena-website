@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif, Manrope } from "next/font/google";
+import { Noto_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import MobileBottomBar from "@/components/MobileBottomBar";
@@ -18,9 +18,8 @@ const notoSerif = Noto_Serif({
   display: "swap",
 });
 
-const manrope = Manrope({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-body",
   display: "swap",
 });
@@ -51,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${notoSerif.variable} ${manrope.variable}`}
+      className={`light ${notoSerif.variable} ${inter.variable}`}
     >
       <head>
         <link

@@ -7,7 +7,7 @@ export default function MobileBottomBar() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-surface-container/95 backdrop-blur-xl border-t border-white/5">
+    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-surface-container/95 backdrop-blur-xl border-t border-outline/10">
       <div className="flex items-center justify-around py-2 px-2">
         <Link
           href="/"
