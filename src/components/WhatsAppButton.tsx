@@ -1,6 +1,6 @@
 export default function WhatsAppButton() {
   const message = encodeURIComponent(
-    "Hi! I'm interested in Adeena Collection products."
+    "Hi! I'm interested in sarees-central Collection products."
   );
   const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
 

@@ -15,8 +15,7 @@ export const stores: Store[] = [
     address:
       "H.No 9-4-84/2, Opposite Galaxy Theatre, Tolichowki Main Road, Hyderabad, 500008",
     hours: "Mon - Sat: 11:00 AM - 10:00 PM\nSun: 12:00 PM - 09:00 PM",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDrWQNYKUZN70lkKlLV5fVwUhwxDVVxQwOqngYsOcEZbtBbNKsL4DY7EFJC4gofftrFCwelQw7585HSYc75vx1QkVAqaOyGFnEbLBHDU4SqXFWRcQUeZkmkj4aHScIu1j7dMcxdkFIfgkDAdKgY-XowqvdiP-7pUnmnZFAcaZg3D4IL_3UGIu112A9g4yW9nTk4GeFyz3k7SD-zDpTo6ziCADWGydrp58DjouTSLTxgkh-5IjPOTsyzE1MOMkWnzFFtHPq6ELsqDRtH",
+    image: "/images/hero_saree_shot_1776250809393.png",
     imageAlt:
       "Luxurious boutique interior with warm golden lighting in Tolichowki",
     mapImage:
@@ -28,8 +27,7 @@ export const stores: Store[] = [
     address:
       "Station Road, Nampally Market Area, Adjacent to Heritage Building, Hyderabad, 500001",
     hours: "Mon - Sat: 10:30 AM - 10:00 PM\nSun: 01:00 PM - 09:30 PM",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBdZwQA-fbOCSEoA_4iSi8d2OQDZsEn2S089BsPLSsTMIplKYwYPWsSyFItlALrnIB70AnpNSlYaRDMv56gRmxss4h1U1tyTQ9ItW7kdPEsmnSwX4GIpQGAIMWtrOTuJM9x90HJhlzW0AaBYwBzWBN26ab9ftXQ_PRsQIGZCsQ_DqLk96_7gFx9S_vkVIEYFBRcANCQzD0XygYYEB9FM09MOFypAfBm0uV-OS1xcWxZy3MGwm4RsL3LCvVmxwYKUWQ0DAqbZrLq0Yhn",
+    image: "/images/mysore_silk_1776250823652.png",
     imageAlt:
       "Elegant heritage store interior in Nampally with archways and premium ethnic wear collections",
     mapImage:
@@ -41,8 +39,7 @@ export const stores: Store[] = [
     address:
       "Laad Bazaar, Near Charminar Entrance, Historic District, Hyderabad, 500002",
     hours: "Mon - Sat: 11:30 AM - 11:00 PM\nSun: 03:00 PM - 10:00 PM",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBjOORnUpoC1DbFwyWe6xN-QbdUMUsU5lgnx74UfMuIqZS4I8wHEkgEknaywevQ3Sb4T6OcBTbU9pRjMKT7PBcbl7jNEVA2LBhMs6K1ylHGQR7HicQmtn6etfaY0kyMv6gfcBaHawKo4Olbs5qdty3RAXWHy6hZtHwXnc-2l4-z3Lm3gx6_KgtAu0E5uxG359-BcqPxl2i1JddKpAZo871xUlWoABXZpA62dtL7AOJ7NGH9m34nlUEo58UnDAPQgB9tZtZndv_Bmgtc",
+    image: "/images/bridal_burgundy_1776250853724.png",
     imageAlt:
       "Bustling luxury outlet near Charminar with traditional Hyderabadi architecture",
     mapImage:
@@ -54,8 +51,7 @@ export const stores: Store[] = [
     address:
       "Gunfoundry Road, Abids Shopping Complex, Level 1, Hyderabad, 500001",
     hours: "Mon - Sat: 11:00 AM - 10:00 PM\nSun: 11:00 AM - 09:00 PM",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAqy6hjsBEg-MmHg8pfixt3tMqiogCeHgrIHo8Fx8my4plt7iEAQCEB0ohrowTXx8uyj8lZ7ow2GYU2jaZEZBnxaZ2FRzTUYI_Y1kuQGiQ9YJk9Mfx-YP5SoTp2wIec-5CS0at6S_Ar0z39SWnmDpvLFH2hRkDi8qJySFpiB4oCtOwg4gCzP3eUvgJKjINYJw0Dn6f7CoFs_UYZndWgq2QdCId4nGxqetj4W8vaTgdQxykHn0ymUqTKeasxo0_ZiVLmzbG2I-nY23cy",
+    image: "/images/ivory_silk_1776250932357.png",
     imageAlt:
       "Modern high-end retail space in Abids with marble floors and spotlight displays",
     mapImage:

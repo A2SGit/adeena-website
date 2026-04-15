@@ -42,9 +42,8 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/5 transition-all duration-300 ${
-          isScrolled ? "bg-[#121212]/95 py-3" : "bg-[#121212]/80 py-4 md:py-6"
-        }`}
+        className={`fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/5 transition-all duration-300 ${isScrolled ? "bg-[#121212]/95 py-3" : "bg-[#121212]/80 py-4 md:py-6"
+          }`}
       >
         <div className="flex justify-between items-center px-4 sm:px-6 md:px-12 max-w-full mx-auto">
           {/* Logo */}
@@ -52,7 +51,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl md:text-3xl font-headline italic text-primary tracking-tighter"
           >
-            Adeena Collection
+            sarees-central Collection
           </Link>
 
           {/* Desktop Nav Links */}
@@ -61,11 +60,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-xs tracking-[0.2em] font-light uppercase transition-colors duration-300 ${
-                  pathname === link.href
+                className={`text-xs tracking-[0.2em] font-light uppercase transition-colors duration-300 ${pathname === link.href
                     ? "text-primary border-b border-primary/50 pb-1"
                     : "text-stone-300 hover:text-primary"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -136,11 +134,10 @@ export default function Navbar() {
 
       {/* Mobile Fullscreen Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background/98 backdrop-blur-xl transition-all duration-500 md:hidden flex flex-col items-center justify-center ${
-          isMenuOpen
+        className={`fixed inset-0 z-40 bg-background/98 backdrop-blur-xl transition-all duration-500 md:hidden flex flex-col items-center justify-center ${isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`}
+          }`}
       >
         <div className="flex flex-col items-center gap-8">
           {navLinks.map((link, i) => (
@@ -148,15 +145,13 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className={`text-2xl font-headline italic tracking-wide transition-all duration-500 ${
-                isMenuOpen
+              className={`text-2xl font-headline italic tracking-wide transition-all duration-500 ${isMenuOpen
                   ? "translate-y-0 opacity-100"
                   : "translate-y-4 opacity-0"
-              } ${
-                pathname === link.href
+                } ${pathname === link.href
                   ? "text-primary"
                   : "text-on-surface-variant hover:text-primary"
-              }`}
+                }`}
               style={{ transitionDelay: isMenuOpen ? `${i * 80}ms` : "0ms" }}
             >
               {link.label}
@@ -172,9 +167,8 @@ export default function Navbar() {
                 logout();
                 setIsMenuOpen(false);
               }}
-              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${
-                isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               Sign Out from {user.name}
             </button>
@@ -184,9 +178,8 @@ export default function Navbar() {
                 openAuthModal();
                 setIsMenuOpen(false);
               }}
-              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${
-                isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-sm font-label uppercase tracking-widest text-primary transition-all duration-500 delay-300 ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               Sign In
             </button>
@@ -195,14 +188,13 @@ export default function Navbar() {
 
         {/* Mobile menu WhatsApp CTA */}
         <a
-          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20Adeena%20Collection%20products."
+          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Collection%20products."
           target="_blank"
           rel="noopener noreferrer"
-          className={`mt-12 px-8 py-4 bg-[#25D366] text-white rounded-full font-label font-semibold text-sm tracking-wider uppercase flex items-center gap-3 transition-all duration-500 ${
-            isMenuOpen
+          className={`mt-12 px-8 py-4 bg-[#25D366] text-white rounded-full font-label font-semibold text-sm tracking-wider uppercase flex items-center gap-3 transition-all duration-500 ${isMenuOpen
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
-          }`}
+            }`}
           style={{ transitionDelay: isMenuOpen ? "400ms" : "0ms" }}
         >
           <span className="material-symbols-outlined text-lg">chat</span>

@@ -11,11 +11,10 @@ export default function MobileBottomBar() {
       <div className="flex items-center justify-around py-2 px-2">
         <Link
           href="/"
-          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${
-            pathname === "/"
+          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${pathname === "/"
               ? "text-primary"
               : "text-on-surface-variant"
-          }`}
+            }`}
         >
           <span
             className="material-symbols-outlined text-xl"
@@ -34,11 +33,10 @@ export default function MobileBottomBar() {
 
         <Link
           href="/collection"
-          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${
-            pathname === "/collection"
+          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${pathname === "/collection"
               ? "text-primary"
               : "text-on-surface-variant"
-          }`}
+            }`}
         >
           <span
             className="material-symbols-outlined text-xl"
@@ -56,7 +54,7 @@ export default function MobileBottomBar() {
         </Link>
 
         <a
-          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20Adeena%20Collection%20products."
+          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Collection%20products."
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-0.5 py-1.5 px-4"
@@ -73,11 +71,10 @@ export default function MobileBottomBar() {
 
         <Link
           href="/stores"
-          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${
-            pathname === "/stores"
+          className={`flex flex-col items-center gap-0.5 py-1.5 px-4 rounded-xl transition-colors ${pathname === "/stores"
               ? "text-primary"
               : "text-on-surface-variant"
-          }`}
+            }`}
         >
           <span
             className="material-symbols-outlined text-xl"

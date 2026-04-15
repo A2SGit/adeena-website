@@ -32,7 +32,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Initialize from client-side local storage safely
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("adeena_cart");
+      const saved = localStorage.getItem("sarees-central_cart");
       if (saved) {
         try {
           setItems(JSON.parse(saved));
@@ -46,7 +46,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Sync to local storage
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localStorage.setItem("adeena_cart", JSON.stringify(items));
+      localStorage.setItem("sarees-central_cart", JSON.stringify(items));
     }
   }, [items]);
 
@@ -112,7 +112,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }}
     >
       {children}
-      
+
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed bottom-24 md:bottom-8 right-4 md:right-8 z-[100] animate-in slide-in-from-bottom-5 fade-in duration-300">

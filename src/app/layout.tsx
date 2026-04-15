@@ -27,11 +27,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Adeena Collection | Authentic Ethnic Wear & Pakistani Suits",
-    template: "%s | Adeena Collection",
+    default: "sarees-central Collection | Authentic Ethnic Wear & Pakistani Suits",
+    template: "%s | sarees-central Collection",
   },
   description:
-    "Discover premium Pakistani lawn suits, Kashmiri embroidery, and luxury ethnic wear at Adeena Collection. 4 boutiques in Hyderabad with 9+ years of heritage craftsmanship.",
+    "Discover premium Pakistani lawn suits, Kashmiri embroidery, and luxury ethnic wear at sarees-central Collection. 4 boutiques in Hyderabad with 9+ years of heritage craftsmanship.",
   keywords: [
     "Pakistani suits",
     "ethnic wear",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Hyderabad boutique",
     "lawn suits",
     "Kashmiri embroidery",
-    "Adeena Collection",
+    "sarees-central Collection",
   ],
 };
 

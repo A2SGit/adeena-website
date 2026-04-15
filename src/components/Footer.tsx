@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-2 md:col-span-1 space-y-4 md:space-y-6">
           <div className="text-xl font-headline text-primary italic">
-            Adeena Collection
+            sarees-central Collection
           </div>
           <p className="text-sm font-light text-stone-400 leading-relaxed">
             Your destination for premium Pakistani lawn, Kashmiri embroidery,
@@ -143,7 +143,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-12 md:mt-20 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 border-t border-white/5 pt-8 md:pt-10">
         <p className="text-[10px] font-light text-stone-600 uppercase tracking-widest text-center">
-          © 2024 Adeena Collection. Crafted for Elegance.
+          © 2024 sarees-central Collection. Crafted for Elegance.
         </p>
         <div className="flex items-center gap-8">
           <span className="text-[10px] text-stone-700 uppercase tracking-widest">

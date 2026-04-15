@@ -4,6 +4,7 @@ import { categories } from "@/data/categories";
 import { instagramPosts } from "@/data/instagram";
 import CategoryCard from "@/components/CategoryCard";
 import SectionHeader from "@/components/SectionHeader";
+import Carousel from "@/components/Carousel";
 
 export default function HomePage() {
   return (
@@ -20,10 +21,10 @@ export default function HomePage() {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline italic text-primary tracking-tighter mb-3 md:mb-4">
-            Adeena Collection
+            Adeena Sarees
           </h1>
           <p className="text-sm sm:text-base md:text-xl font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-on-surface-variant mb-8 md:mb-12">
-            Luxury Ethnic Wear &amp; Pakistani Suits
+            Authentic South Indian Kanjeevarams & Silks
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
@@ -34,7 +35,7 @@ export default function HomePage() {
               Shop Collection
             </Link>
             <a
-              href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20Adeena%20Collection%20products."
+              href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20Adeena%20Sarees."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 sm:px-10 py-4 border border-outline/20 text-on-surface hover:border-primary/50 transition-all rounded-md uppercase tracking-widest text-xs flex items-center justify-center gap-2"
@@ -58,10 +59,10 @@ export default function HomePage() {
       <section className="py-16 md:py-32 px-4 sm:px-6 md:px-24 bg-surface-container-low relative">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
           <div className="w-full md:w-1/2 relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border border-white/5">
+            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border border-primary/20">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkS6pvB6HdTKobzAlXI54B21zi3oFy8RK7ExLeUZc9eyfyLpZ_j8zDenuSvTg709GRtOD72DBjytuFSAfwkLDPoRM7IwaSQPb6YxDYt9HbVjycQBG2OabE4vGc7JU47tYpkxKc4ZRiLKZgfIUihidsIrRyYL5uZerDCGo19_ooqYhTlwcdMQaKXl76p7Du1TvvsjaNZATLH-xuFOeVzuztzdZ4FTfnYaE9gXbix7MNoq96On3qxnz8MWI83nOMDnIubaVSyJ_21056"
-                alt="Exquisite detailed shot of gold and thread embroidery on a premium Pakistani lawn suit fabric"
+                src="/images/hero_saree_shot_1776250809393.png"
+                alt="High-end fashion editorial shot of a traditional South Indian Kanjeevaram silk saree"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -95,10 +96,10 @@ export default function HomePage() {
               Heritage Artistry for the Modern Silhouette
             </h2>
             <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-light">
-              For nearly a decade, Adeena Collection has curated the finest
-              Pakistani Lawn, intricate Kashmiri embroidery, and regal party
+              For nearly a decade, Adeena Sarees has curated the finest
+              Kancheepuram Silks, intricate Jamdani weaves, and regal bridal
               wear. Based in the heart of Hyderabad, we blend traditional South
-              Asian craftsmanship with contemporary modest fashion.
+              Indian handloom craftsmanship with contemporary elegance.
             </p>
             <div className="grid grid-cols-2 gap-6 md:gap-8 py-2 md:py-4">
               <div className="border-l border-primary/30 pl-4">
@@ -129,6 +130,18 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* Featured Collection Carousel */}
+      <section className="py-16 bg-surface">
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <SectionHeader
+            eyebrow="Signature Drapes"
+            title="House Favorites"
+            center
+          />
+        </div>
+        <Carousel />
       </section>
 
       {/* Featured Categories */}
@@ -166,7 +179,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader
             eyebrow="Social Atelier"
-            title="Follow our Journey @AdeenaCollection"
+            title="Follow our Journey @AdeenaSarees"
             center
           />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-1">

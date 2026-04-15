@@ -5,7 +5,7 @@ import StoreCard from "@/components/StoreCard";
 export const metadata: Metadata = {
   title: "Stores",
   description:
-    "Visit Adeena Collection's 4 flagship boutiques in Hyderabad — Tolichowki, Nampally, Charminar, and Abids. Experience luxury ethnic wear in person.",
+    "Visit sarees-central Collection's 4 flagship boutiques in Hyderabad — Tolichowki, Nampally, Charminar, and Abids. Experience luxury ethnic wear in person.",
 };
 
 export default function StoresPage() {
@@ -22,7 +22,7 @@ export default function StoresPage() {
             Visit Our <span className="text-primary">Flagship</span> Ateliers
           </h1>
           <p className="text-on-surface-variant text-base md:text-lg max-w-xl font-light leading-relaxed">
-            Step into the world of Adeena Collection. Our physical stores are
+            Step into the world of sarees-central Collection. Our physical stores are
             designed to provide an immersive sensory experience of luxury and
             heritage.
           </p>
