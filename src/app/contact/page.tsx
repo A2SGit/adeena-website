@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with sarees-central Collection for inquiries, custom orders, or wholesale collaborations. Message us on WhatsApp or submit the contact form.",
+    "Get in touch with Siluva Sarees for inquiries, custom orders, or wholesale collaborations. Message us on WhatsApp or submit the contact form.",
 };
 
 export default function ContactPage() {
@@ -40,7 +40,7 @@ export default function ContactPage() {
           {/* Primary CTA: WhatsApp */}
           <div className="pt-2 md:pt-4">
             <a
-              href="https://wa.me/919876543210?text=Hi!%20I'd%20like%20to%20enquire%20about%20sarees-central%20Collection."
+              href="https://wa.me/9154905787?text=Hi!%20I'd%20like%20to%20enquire%20about%20Siluva%20Sarees."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 md:gap-4 px-6 sm:px-10 py-4 md:py-5 rounded-md gold-gradient text-on-primary-fixed font-semibold text-base md:text-lg hover:opacity-90 transition-all duration-300 group shadow-xl shadow-primary/10 active:scale-95"
@@ -61,7 +61,7 @@ export default function ContactPage() {
               <p className="text-primary font-label text-xs tracking-widest uppercase">
                 Phone &amp; Inquiries
               </p>
-              <p className="text-lg md:text-xl font-light">+91 98765 43210</p>
+              <p className="text-lg md:text-xl font-light">+91 5490 5787</p>
             </div>
             <div className="space-y-2 md:space-y-3">
               <p className="text-primary font-label text-xs tracking-widest uppercase">
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 href="#"
                 className="text-lg md:text-xl font-light hover:text-primary transition-colors flex items-center gap-2"
               >
-                @sarees-centralcollection
+                @siluvasarees
                 <span className="material-symbols-outlined text-sm">
                   north_east
                 </span>

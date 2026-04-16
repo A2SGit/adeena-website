@@ -5,7 +5,7 @@ import ProcessStep from "@/components/ProcessStep";
 export const metadata: Metadata = {
   title: "Wholesale",
   description:
-    "Partner with sarees-central Collection for wholesale ethnic wear. Minimum 50+ units, global shipping, and bespoke pricing for retailers worldwide.",
+    "Partner with Siluva Sarees for wholesale ethnic wear. Minimum 50+ units, global shipping, and bespoke pricing for retailers worldwide.",
 };
 
 const processSteps = [
@@ -64,7 +64,7 @@ export default function WholesalePage() {
             Available
           </h1>
           <p className="text-base sm:text-lg md:text-xl font-light text-on-surface-variant max-w-2xl leading-relaxed mb-8 md:mb-12">
-            Partner with sarees-central Collection to bring timeless elegance to your
+            Partner with Siluva Sarees to bring timeless elegance to your
             boutique. We offer curated wholesale opportunities for global
             retailers who value craftsmanship and artisanal luxury.
           </p>
@@ -131,7 +131,7 @@ export default function WholesalePage() {
               custom tailoring options, and seasonal exclusivity.
             </p>
             <a
-              href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20wholesale%20orders%20from%20sarees-central%20Collection."
+              href="https://wa.me/9154905787?text=Hi!%20I'm%20interested%20in%20wholesale%20orders%20from%20Siluva%20Sarees."
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit bg-gradient-to-r from-primary to-primary-container px-6 sm:px-10 py-4 md:py-5 rounded-md flex items-center gap-3 md:gap-4 group transition-all hover:scale-105 active:scale-95 shadow-xl shadow-primary/10"

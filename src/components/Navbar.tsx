@@ -51,7 +51,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl md:text-3xl font-headline italic text-primary tracking-tighter"
           >
-            sarees-central Collection
+            Siluva Sarees
           </Link>
 ...
           <div className="hidden md:flex gap-8 items-center">
@@ -187,7 +187,7 @@ export default function Navbar() {
 
         {/* Mobile menu WhatsApp CTA */}
         <a
-          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Collection%20products."
+          href="https://wa.me/9154905787?text=Hi!%20I'm%20interested%20in%20Siluva%20Sarees%20products."
           target="_blank"
           rel="noopener noreferrer"
           className={`mt-12 px-8 py-4 bg-[#25D366] text-white rounded-full font-label font-semibold text-sm tracking-wider uppercase flex items-center gap-3 transition-all duration-500 ${isMenuOpen

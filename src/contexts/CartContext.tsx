@@ -32,7 +32,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Initialize from client-side local storage safely
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("sarees-central_cart");
+      const saved = localStorage.getItem("siluva_cart");
       if (saved) {
         try {
           setItems(JSON.parse(saved));
@@ -46,7 +46,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Sync to local storage
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localStorage.setItem("sarees-central_cart", JSON.stringify(items));
+      localStorage.setItem("siluva_cart", JSON.stringify(items));
     }
   }, [items]);
 

@@ -28,7 +28,7 @@ export default function HomePage() {
             </span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-8xl font-headline italic text-primary tracking-tighter mb-3 md:mb-4 animate-reveal">
-            sarees-central Sarees
+            Siluva Sarees
           </h1>
           <p className="text-sm sm:text-base md:text-xl font-light tracking-[0.2em] md:tracking-[0.3em] uppercase text-on-surface-variant mb-8 md:mb-12 delay-200">
             Authentic South Indian Kanjeevarams & Silks
@@ -42,7 +42,7 @@ export default function HomePage() {
               Shop Collection
             </Link>
             <a
-              href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Sarees."
+              href="https://wa.me/9154905787?text=Hi!%20I'm%20interested%20in%20Siluva%20Sarees."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 sm:px-10 py-4 border border-primary/20 text-on-surface hover:border-primary/50 transition-all rounded-md uppercase tracking-widest text-xs flex items-center justify-center gap-2 backdrop-blur-sm"
@@ -103,10 +103,10 @@ export default function HomePage() {
               Heritage Artistry for the Modern Silhouette
             </h2>
             <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-light">
-              For nearly a decade, sarees-central Sarees has curated the finest
+              For nearly a decade, Siluva Sarees has curated the finest
               Kancheepuram Silks, intricate Jamdani weaves, and regal bridal
-              wear. Based in the heart of Hyderabad, we blend traditional South
-              Indian handloom craftsmanship with contemporary elegance.
+              wear. Based in the textile hub of Surat, Gujarat, we blend traditional
+              handloom craftsmanship with contemporary elegance.
             </p>
             <div className="grid grid-cols-2 gap-6 md:gap-8 py-2 md:py-4">
               <div className="border-l border-primary/30 pl-4">
@@ -114,7 +114,7 @@ export default function HomePage() {
                   4
                 </span>
                 <span className="text-[10px] md:text-xs uppercase tracking-widest text-on-surface-variant">
-                  Hyderabad Boutiques
+                  Surat Locations
                 </span>
               </div>
               <div className="border-l border-primary/30 pl-4">
@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader
             eyebrow="Social Atelier"
-            title="Follow our Journey @sarees-centralSarees"
+            title="Follow our Journey @SiluvaSarees"
             center
           />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-1">

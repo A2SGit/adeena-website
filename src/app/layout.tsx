@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif, Inter } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import MobileBottomBar from "@/components/MobileBottomBar";
@@ -10,7 +10,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import AuthModal from "@/components/AuthModal";
 import CartDrawer from "@/components/CartDrawer";
 
-const notoSerif = Noto_Serif({
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
@@ -26,19 +26,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "sarees-central Collection | Authentic Ethnic Wear & Pakistani Suits",
-    template: "%s | sarees-central Collection",
+    default: "Siluva Sarees | Wholesale & Retail Saree Manufacturer",
+    template: "%s | Siluva Sarees",
   },
   description:
-    "Discover premium Pakistani lawn suits, Kashmiri embroidery, and luxury ethnic wear at sarees-central Collection. 4 boutiques in Hyderabad with 9+ years of heritage craftsmanship.",
+    "Discover premium wholesale and retail sarees at Siluva Sarees. We are proud manufacturers based out of Surat, Gujarat.",
   keywords: [
-    "Pakistani suits",
-    "ethnic wear",
-    "luxury fashion",
-    "Hyderabad boutique",
-    "lawn suits",
-    "Kashmiri embroidery",
-    "sarees-central Collection",
+    "sarees",
+    "wholesale",
+    "retail",
+    "Surat sarees",
+    "Gujarat silk",
+    "handloom",
+    "Siluva Sarees",
   ],
 };
 
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`light ${notoSerif.variable} ${inter.variable}`}
+      className={`light ${playfairDisplay.variable} ${inter.variable}`}
     >
       <head>
         <link

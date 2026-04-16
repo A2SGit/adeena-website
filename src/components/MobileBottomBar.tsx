@@ -54,7 +54,7 @@ export default function MobileBottomBar() {
         </Link>
 
         <a
-          href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20sarees-central%20Collection%20products."
+          href="https://wa.me/9154905787?text=Hi!%20I'm%20interested%20in%20Siluva%20Sarees%20products."
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-0.5 py-1.5 px-4"

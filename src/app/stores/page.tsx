@@ -5,7 +5,7 @@ import StoreCard from "@/components/StoreCard";
 export const metadata: Metadata = {
   title: "Stores",
   description:
-    "Visit sarees-central Collection's 4 flagship boutiques in Hyderabad — Tolichowki, Nampally, Charminar, and Abids. Experience luxury ethnic wear in person.",
+    "Visit Siluva Sarees' 4 flagship boutiques in Surat — Surat Textile Market, Ring Road, Vesu, and Adajan. Experience luxury ethnic wear in person.",
 };
 
 export default function StoresPage() {
@@ -22,7 +22,7 @@ export default function StoresPage() {
             Visit Our <span className="text-primary">Flagship</span> Ateliers
           </h1>
           <p className="text-on-surface-variant text-base md:text-lg max-w-xl font-light leading-relaxed">
-            Step into the world of sarees-central Collection. Our physical stores are
+            Step into the world of Siluva Sarees. Our physical stores are
             designed to provide an immersive sensory experience of luxury and
             heritage.
           </p>
@@ -50,7 +50,7 @@ export default function StoresPage() {
             tailored experience with our head artisans.
           </p>
           <a
-            href="https://wa.me/919876543210?text=Hi!%20I'd%20like%20to%20book%20a%20private%20styling%20session."
+            href="https://wa.me/9154905787?text=Hi!%20I'd%20like%20to%20book%20a%20private%20styling%20session."
             target="_blank"
             rel="noopener noreferrer"
             className="relative z-10 inline-block px-8 py-4 border border-primary text-primary rounded-xl hover:bg-primary hover:text-on-primary transition-all duration-300 font-label tracking-widest uppercase text-xs active:scale-95"

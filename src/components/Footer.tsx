@@ -7,11 +7,10 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-2 md:col-span-1 space-y-4 md:space-y-6">
           <div className="text-xl font-headline text-primary italic">
-            sarees-central Collection
+            Siluva Sarees
           </div>
           <p className="text-sm font-light text-on-surface-variant leading-relaxed">
-            Your destination for premium Pakistani lawn, Kashmiri embroidery,
-            and luxury ethnic wear in Hyderabad. A legacy of 9+ years.
+            Your destination for premium wholesale and retail sarees from Surat, Gujarat. A legacy of 9+ years.
           </p>
           <div className="flex gap-4">
             <a
@@ -23,7 +22,7 @@ export default function Footer() {
               </span>
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/9154905787"
               target="_blank"
               rel="noopener noreferrer"
               className="text-on-surface-variant hover:text-primary transition-colors"
@@ -46,7 +45,7 @@ export default function Footer() {
                 href="/stores"
                 className="hover:text-primary transition-colors"
               >
-                Tolichowki, Hyderabad
+                Surat Textile Market, Surat
               </Link>
             </li>
             <li>
@@ -54,7 +53,7 @@ export default function Footer() {
                 href="/stores"
                 className="hover:text-primary transition-colors"
               >
-                Nampally, Hyderabad
+                Ring Road, Surat
               </Link>
             </li>
             <li>
@@ -62,7 +61,7 @@ export default function Footer() {
                 href="/stores"
                 className="hover:text-primary transition-colors"
               >
-                Charminar, Hyderabad
+                Vesu, Surat
               </Link>
             </li>
             <li>
@@ -70,7 +69,7 @@ export default function Footer() {
                 href="/stores"
                 className="hover:text-primary transition-colors"
               >
-                Abids, Hyderabad
+                Adajan, Surat
               </Link>
             </li>
           </ul>
@@ -143,11 +142,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-12 md:mt-20 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 border-t border-outline/10 pt-8 md:pt-10">
         <p className="text-[10px] font-light text-on-surface-variant uppercase tracking-widest text-center">
-          © 2024 sarees-central Collection. Crafted for Elegance.
+          © 2024 Siluva Sarees. Crafted for Elegance.
         </p>
         <div className="flex items-center gap-8">
           <span className="text-[10px] text-on-surface-variant uppercase tracking-widest">
-            Designed by Studio Atelier
+            Designed by a2slabs.com
           </span>
         </div>
       </div>

@@ -33,22 +33,22 @@
   --color-on-tertiary-container: #0f172a;
 
   /* Surface Palette (Clean White Theme) */
-  --color-background: #ffffff;
-  --color-on-background: #0f172a;
-  --color-surface: #fdfbf7;
-  --color-surface-dim: #f1f5f9;
+  --color-background: #fdfaf6;
+  --color-on-background: #2b1318;
+  --color-surface: #fdfaf6;
+  --color-surface-dim: #f3efe9;
   --color-surface-bright: #ffffff;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f8fafc;
-  --color-surface-container: #f1f5f9;
-  --color-surface-container-high: #e2e8f0;
-  --color-surface-container-highest: #cbd5e1;
-  --color-surface-variant: #e2e8f0;
+  --color-surface-container-low: #faf6f1;
+  --color-surface-container: #f3efe9;
+  --color-surface-container-high: #e8e2da;
+  --color-surface-container-highest: #dbd4cb;
+  --color-surface-variant: #e8e2da;
   --color-surface-tint: #a31131;
-  --color-on-surface: #0f172a;
-  --color-on-surface-variant: #475569;
-  --color-inverse-surface: #0f172a;
-  --color-inverse-on-surface: #f8fafc;
+  --color-on-surface: #2b1318;
+  --color-on-surface-variant: #573d43;
+  --color-inverse-surface: #2b1318;
+  --color-inverse-on-surface: #fdfaf6;
 
   /* Error */
   --color-error: #ba1a1a;
@@ -61,7 +61,7 @@
   --color-outline-variant: #cbd5e1;
 
   /* Typography */
-  --font-headline: "Noto Serif", "Georgia", serif;
+  --font-headline: "Playfair Display", "Georgia", serif;
   --font-body: "Inter", "Helvetica Neue", sans-serif;
   --font-label: "Inter", "Helvetica Neue", sans-serif;
 
